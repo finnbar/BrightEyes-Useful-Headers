@@ -1,6 +1,7 @@
 /* Letters.h for Bright Eyes - set and animate a 5x5 grid
+ * Useful when used with fonts.h
  * Written by Finnbar Keating for TWSU
- * CC-Attribution-BY-ShareAlike;
+ * CC-Attribution-BY-ShareAlike
  */
 ;
 int ref[42];  //this is the reference, which we'll build the letters on
