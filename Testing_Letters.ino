@@ -49,8 +49,8 @@ void convert() {
 
 void alphabet() {
   if(readTouch()) {
-    startLetter(aUpper);
+    startLetter(aU);
   } else {
-    startLetter(aLower);
+    startLetter(aL);
   }
 }
