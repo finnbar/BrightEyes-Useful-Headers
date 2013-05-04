@@ -3,18 +3,14 @@
  * Written by Finnbar Keating for TWSU
  * CC-Attribution-BY-ShareAlike
  */
-;
-int ref[42];  //this is the reference, which we'll build the letters on
+;  //this is the reference, which we'll build the letters on. why semicolon here?????
 int ref2[42];
 int ref3[42];
 int ref4[42];
 int ref5[42];
 int ref6[42];
-int ref7[42];
 unsigned char DMXreturn[180];
-const int lup[] =  //these are the lookup table in seven parts
-{
-  0  ,0  ,0  ,1  ,2  ,3  ,4  ,5  ,6  ,7  ,8  ,9  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,88 ,89 ,90 ,91 ,92 ,93 ,94 ,95 ,96 ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0};
+
 const int lup2[] =  
 {
   0  ,10 ,11 ,12 ,13 ,14 ,15 ,16 ,17 ,18 ,19 ,20 ,21 ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,97 ,98 ,99 ,100,101,102,103,104,105,106,107,108,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0};
@@ -30,9 +26,6 @@ const int lup5[] =
 const int lup6[] =  
 {
   0  ,67 ,68 ,69 ,70 ,71 ,72 ,73 ,74 ,75 ,76 ,77 ,78 ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,154,155,156,157,158,159,160,161,162,163,164,165,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0};
-const int lup7[] =  
-{
-  0  ,0  ,0  ,79 ,80 ,81 ,82 ,83 ,84 ,85 ,86 ,87 ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,166,167,168,169,170,171,172,173,174,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0  ,0};
 
 
 void startLetter(const int b[]) {   //sets letter in position (frame 1) to be moved by playLetter
